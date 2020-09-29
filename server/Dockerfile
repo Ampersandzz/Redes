@@ -23,13 +23,9 @@ RUN tar xvf 8.0 && mkdir server
 RUN cd server/ && cmake ../mysql-mysql-server-f8cdce8/ -DDOWNLOAD_BOOST=1 -DWITH_BOOST=/usr/local/bin && \
     make && \
     mysqld --initialize-insecure && \
-    mysqld --daemonize -u root
+    mysqld --daemonize -u root && \
+    chmod 755 /var/tmp/init.sh && \
+    /var/tmp/init.sh && \
+    mysql -h localhost -u root < /var/tmp/mysql-user.sql
 
-RUN chmod 755 /var/tmp/init.sh && \
-    cd /var/tmp/ && \
-    ./init.sh
-
-RUN mysql -h localhost -u root < /var/tmp/mysql-user.sql && \
-    pids=$(pgrep mysqld) && \
-    kill $pids && \
-    mysqld --daemonize --ssl=0 -u root
+CMD mysqld --ssl=0 -u root
