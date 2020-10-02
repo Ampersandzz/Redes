@@ -19,6 +19,6 @@
 
 ADVERTENCIA: La imagen del servidor pesa 14.4gb 
 
-Por último, a continuación se deja un link con el video que se encuentra en este repositorio (Patrones-MySQL.mvk), en el cual se pueden ver patrones de tráfico encontrados en el protocolo MySQL. 
+Por último, a continuación se deja el video que se encuentra en este repositorio (Patrones-MySQL.mvk), en el cual se pueden ver patrones de tráfico encontrados en el protocolo MySQL. 
 
-https://youtu.be/RU4R7Q54NLw
+https://www.youtube.com/embed/RU4R7Q54NLw
