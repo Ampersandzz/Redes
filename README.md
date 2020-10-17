@@ -19,12 +19,12 @@
 
 <b>ADVERTENCIA:</b> La imagen del servidor pesa 14.4gb 
 
-A continuación se deja un link con el video que se encuentra en este repositorio (Patrones-MySQL.mvk), en el cual se pueden ver patrones de tráfico encontrados en el protocolo MySQL. 
+A continuación se presenta un [video](https://youtu.be/RU4R7Q54NLw) que se encuentra en este repositorio (Patrones-MySQL.mvk), en el cual se pueden ver patrones de tráfico encontrados en el protocolo MySQL. 
 
-<a href="https://youtu.be/RU4R7Q54NLw" target="_blank"><img src="http://img.youtube.com/vi/RU4R7Q54NLw/3.jpg" 
-alt="IMAGE ALT TEXT HERE" width="400" height="300"/></a>
+<a href="https://youtu.be/RU4R7Q54NLw" target="_blank"><img src="https://img.youtube.com/vi/RU4R7Q54NLw/maxresdefault.jpg" 
+alt="IMAGE ALT TEXT HERE" width="400" height="225"/></a>
 
-También se adjunta un video en donde se modifica el tráfico mediante la herramienta [Polymorph](https://github.com/shramos/polymorph).
+También se adjunta un [video](https://youtu.be/ipPNsHhFE0M) en donde se modifica el tráfico mediante la herramienta [Polymorph](https://github.com/shramos/polymorph).
 
-<a href="https://youtu.be/ipPNsHhFE0M" target="_blank"><img src="http://img.youtube.com/vi/ipPNsHhFE0M/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="400" height="300"/></a>
+<a href="https://youtu.be/ipPNsHhFE0M" target="_blank"><img src="https://img.youtube.com/vi/ipPNsHhFE0M/maxresdefault.jpg" 
+alt="IMAGE ALT TEXT HERE" width="400" height="225"/></a>
