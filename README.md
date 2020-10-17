@@ -19,7 +19,7 @@
 
 <b>ADVERTENCIA:</b> La imagen del servidor pesa 14.4 GB.
 
-A continuación se presenta un [video](https://youtu.be/RU4R7Q54NLw) ) en el cual se pueden ver los distintos patrones de tráfico encontrados dentro del protocolo MySQL. 
+A continuación se presenta un [video](https://youtu.be/RU4R7Q54NLw) en el cual se pueden ver los distintos patrones de tráfico encontrados dentro del protocolo MySQL. 
 
 <a href="https://youtu.be/RU4R7Q54NLw" target="_blank"><img src="https://img.youtube.com/vi/RU4R7Q54NLw/maxresdefault.jpg" 
 alt="IMAGE ALT TEXT HERE" width="400" height="225"/></a>
