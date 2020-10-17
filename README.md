@@ -13,12 +13,18 @@
     `sudo docker build --tag mysql:client .` .  
     - Luego se debe crear y correr un contenedor con la imagen anterior. Se debe pasar el host como variable de entorno.
     - Para obtener la IP host primero se debe conocer la id del contenedor servidor. esto se puede hacer mediante `sudo docker ps` (el contenedor servidor debe estar corriendo). Luego, mediante el siguiente comando, se puede obtener la IP del host `docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_id`.
-    - Ya teniendo el host, se debe correr el contenedor cliente. Esto se puede hacer con  `sudo docker run -it -e "MYSQL_HOST=ip_host mysql:client"` con ip_host la IP del contenedor servidor.
+    - Ya teniendo el host, se debe correr el contenedor cliente. Esto se puede hacer con  `sudo docker run -it -e "MYSQL_HOST=ip_host" mysql:client` con ip_host la IP del contenedor servidor.
     - Con lo anterior, ya se debería entrar a MySQL.
 
 
-ADVERTENCIA: La imagen del servidor pesa 14.4gb 
+<b>ADVERTENCIA:</b> La imagen del servidor pesa 14.4gb 
 
-Por último, a continuación se deja un link con el video que se encuentra en este repositorio (Patrones-MySQL.mvk), en el cual se pueden ver patrones de tráfico encontrados en el protocolo MySQL. 
+A continuación se deja un link con el video que se encuentra en este repositorio (Patrones-MySQL.mvk), en el cual se pueden ver patrones de tráfico encontrados en el protocolo MySQL. 
 
-https://youtu.be/RU4R7Q54NLw
+<a href="https://youtu.be/RU4R7Q54NLw" target="_blank"><img src="http://img.youtube.com/vi/RU4R7Q54NLw/3.jpg" 
+alt="IMAGE ALT TEXT HERE" width="400" height="300"/></a>
+
+También se adjunta un video en donde se modifica el tráfico mediante la herramienta [Polymorph](https://github.com/shramos/polymorph).
+
+<a href="https://youtu.be/ipPNsHhFE0M" target="_blank"><img src="http://img.youtube.com/vi/ipPNsHhFE0M/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="400" height="300"/></a>
