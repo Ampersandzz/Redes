@@ -7,7 +7,7 @@ def calculate_delay(packet):
         except:
             pass
         packet.global_var('time', datetime.now())
-    elif packet['IP']['src'] == '172.17.0.2':
+    elif packet['IP']['src'] == '172.17.0.2' and packet['MYSQL']:
         delay = (datetime.now() - packet.time).microseconds * 2 /1000
         print("{}ms".format(delay))
     return packet
