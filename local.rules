@@ -1,0 +1,8 @@
+alert tcp any any -> 172.17.0.2 3306 (msg:"Intento de Login como root!"; content:"root"; offset:36; depth:5; sid:1; rev:001;)
+alert tcp 172.17.0.2 3306 -> any any (msg:"Error 1045"; content:"|ff 15 04|"; isdataat:70;sid:2; rev:001;)
+#alert tcp any any -> any any (msg:"TESTING";sid:100;rev:1;)
+#activate tcp 172.17.0.2 3306 -> any any (msg:"Login exitoso"; content:"|07 00 00 04 00|"; depth:5; activates:1; sid:10; rev:1;)
+#dynamic tcp any any -> 172.17.0.2 3306 (activated_by: 1; count:100;)
+alert tcp any any <> 172.17.0.2 3306 (msg:"Comando GRANT ALL esta siendo usado!";content:"GRANT"; content:"ALL"; within:6; sid:3; rev:1;)
+alert tcp !172.17.0.3 any -> 172.17.0.2 3306 (msg:"Intento de inicio de sesión desde una ubicacion no autorizada"; flow:established,to_server; sid:4; rev:1;)
+alert tcp any any -> 172.17.0.2 3306 ( msg:"Estan realizando una accion peligrosa"; flow:to_server,established; pcre:"/(DROP)|(DELETE)|(TRUNCATE)|(COMMIT)|(REPLACE)\s/im"; sid:5; rev:1;)
